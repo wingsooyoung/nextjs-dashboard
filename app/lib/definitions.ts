@@ -16,6 +16,11 @@ export type Customer = {
   image_url: string;
 };
 
+export type Postcards = {
+  name: string;
+  image_url: string;
+}
+
 export type Invoice = {
   id: string;
   customer_id: string;
@@ -74,6 +79,21 @@ export type FormattedCustomersTable = {
   total_pending: string;
   total_paid: string;
 };
+
+export type PostcardsTableType = {
+  name: string;
+  image_url: string;
+};
+
+export type FormattedPostcardsTable = {
+  name: string;
+  image_url: string;
+};
+
+export type PostcardField = {
+  name: string;
+};
+
 
 export type CustomerField = {
   id: string;
